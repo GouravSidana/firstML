@@ -2,8 +2,6 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
-import matplotlib.pyplot as plt
-import seaborn as sns
 import warnings
 
 # Ignore background warnings for a cleaner terminal output
@@ -42,11 +40,9 @@ print(f"VOC Importance: {importances[0] * 100:.2f}%")
 print(f"JSC Importance: {importances[1] * 100:.2f}%")
 print(f"FF Importance:  {importances[2] * 100:.2f}%")
 
-# ==========================================
 # 8. INTERACTIVE PREDICTION FUNCTION
-# ==========================================
 def predict_efficiency():
-    
+
     print("   SOLAR CELL EFFICIENCY PREDICTOR")
     
     # This loop keeps the tool running until you tell it to stop
@@ -55,17 +51,17 @@ def predict_efficiency():
             print("\nPlease enter your experimental values (or type 'q' to quit):")
             
             # Get VOC
-            voc_input = input("1. Enter VOC (e.g., 650.0) : ")
+            voc_input = input("1. Enter VOC (in mV) : ")
             if voc_input.lower() == 'q': break
             user_voc = float(voc_input)
 
             # Get JSC
-            jsc_input = input("2. Enter JSC (e.g., 15.2)  : ")
+            jsc_input = input("2. Enter JSC (in mA/cm²) : ")
             if jsc_input.lower() == 'q': break
             user_jsc = float(jsc_input)
 
             # Get FF
-            ff_input = input("3. Enter FF  (e.g., 0.72)  : ")
+            ff_input = input("3. Enter FF : ")
             if ff_input.lower() == 'q': break
             user_ff = float(ff_input)
 
