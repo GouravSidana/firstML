@@ -4,7 +4,7 @@ import seaborn as sns
 
 # 1. Load your specific dataset
 # Ensure 'ML_Ready_Dataset.csv' is in the same folder as your Python script
-df = pd.read_csv('ML_Ready_Dataset.csv')
+df = pd.read_csv('data.csv')
 
 # Set the visual style for the plots
 sns.set_theme(style="whitegrid")
