@@ -8,7 +8,7 @@ import warnings
 warnings.filterwarnings('ignore', category=UserWarning)
 
 # 1. Load your specific dataset
-df = pd.read_csv('data.csv')
+df = pd.read_csv('data_cleaned.csv')
 
 # 2. Define Features (X) and Target (y)
 X = df[['VOC', 'JSC', 'FF']]

@@ -7,7 +7,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 
 
 # 1. LOAD DATA & SPLIT (80-20)
-df = pd.read_csv('ML_Ready_Dataset.csv')
+df = pd.read_csv('data_cleaned.csv')
 
 X = df[['VOC', 'JSC', 'FF']]
 y = df['PCE']

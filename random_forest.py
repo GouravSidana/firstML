@@ -39,5 +39,5 @@ print(f"JSC Importance: {importances[1] * 100:.2f}%")
 print(f"FF Importance:  {importances[2] * 100:.2f}%")
 
 # Example Prediction
-new_data = [[700, 15, 0.75]] # VOC, JSC, FF
+new_data = [[1400, 6.46, 0.792]] # VOC, JSC, FF
 print(f"Predicted PCE for {new_data}: {model.predict(new_data)[0]:.2f}")

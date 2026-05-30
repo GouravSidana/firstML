@@ -4,7 +4,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
 # 1. Load the dataset
-df = pd.read_csv('ML_Ready_Dataset.csv')
+df = pd.read_csv('data_cleaned.csv')
 
 # 2. Define Features (X) and Target (y)
 # We want to predict PCE using VOC, JSC, and FF
@@ -31,5 +31,5 @@ print(f"Mean Squared Error: {mse:.4f}")
 print(f"R-squared Score: {r2:.4f}")
 
 # Example Prediction
-new_data = [[700, 15, 0.75]] # VOC, JSC, FF
+new_data = [[1400, 6.46, 0.792]] # VOC, JSC, FF
 print(f"Predicted PCE for {new_data}: {model.predict(new_data)[0]:.2f}")

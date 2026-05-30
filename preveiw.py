@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # 1. Load your specific dataset
-# Ensure 'ML_Ready_Dataset.csv' is in the same folder as your Python script
-df = pd.read_csv('data.csv')
+# Ensure 'data_cleaned.csv' is in the same folder as your Python script
+df = pd.read_csv('data_cleaned.csv')
 
 # Set the visual style for the plots
 sns.set_theme(style="whitegrid")
